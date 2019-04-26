@@ -1,0 +1,20 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: gateway-ingress
+spec:
+  rules:
+  - http:
+      paths:
+      - path: /employee/*
+        backend:
+          serviceName: employee
+          servicePort: 8080
+      - path: /department/*
+        backend:
+          serviceName: department
+          servicePort: 8080
+      - path: /organization/*
+        backend:
+          serviceName: organization
+          servicePort: 8080

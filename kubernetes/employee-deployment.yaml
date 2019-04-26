@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: employee
-        image: eu.gcr.io/training-project-mat/employee:1.1
+        image: eu.gcr.io/<your_project_name>/employee:1.0
         ports:
         - containerPort: 8080
         env:

@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: gateway
-        image: eu.gcr.io/training-project-mat/gateway:1.0
+        image: eu.gcr.io/<your_project_name>/gateway:1.0
         ports:
         - containerPort: 8080
 ---
